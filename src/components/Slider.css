@@ -1,0 +1,181 @@
+.app-slider-container {
+    display: flex;
+    flex-direction: row;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    width: 100%;
+}
+
+.app-slider-value {
+    padding-right: 1rem;
+    /* padding-left: 0.5rem; */
+    white-space: nowrap;
+
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+      -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+        -o-user-select: none;
+            user-select: none; /* Non-prefixed version, currently*/
+}
+
+.app-slider-light {
+    -webkit-appearance: none;
+    width: 100%;
+    /* width: 150px; */
+    height: 3px;
+    border-radius: 3px;
+    background: #6B64B2;
+    outline: none;
+    /* opacity: 0.7; */
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+.app-slider-dark {
+    -webkit-appearance: none;
+    width: 100%;
+    /* width: 150px; */
+    height: 3px;
+    border-radius: 3px;
+    background: #7f7aca;
+    outline: none;
+    /* opacity: 0.7; */
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+/* .app-slider:hover {
+    background: #dfdfdf;
+} */
+
+.app-slider-light::-webkit-slider-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border-width: 3px;
+    border-style: solid;
+    border-color: #6B64B2;
+    background: #ffffff;
+    color: #ffffff;
+    cursor: pointer;
+    -webkit-appearance: none;
+    appearance: none;
+}
+.app-slider-dark::-webkit-slider-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border-width: 3px;
+    border-style: solid;
+    border-color: #7f7aca;
+    background: #131416;
+    color: #131416;
+    cursor: pointer;
+    -webkit-appearance: none;
+    appearance: none;
+}
+/*
+.app-slider::-ms-fill-lower {
+    color: green;
+    background-color: red;
+} */
+
+.app-slider-light::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    border-width: 3px;
+    border-style: solid;
+    border-color: #6B64B2;
+    background: white;
+}
+.app-slider-dark::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    border-width: 3px;
+    border-style: solid;
+    border-color: #7f7aca;
+    background: #131416;
+}
+
+
+/* .app-slider-light::-ms-thumb { */
+    /* box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; */
+    /* width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border-width: 3px;
+    border-style: solid;
+    border-color: #7f7aca;
+    color: #1d67f0;
+    background: #1d67f0;
+    cursor: pointer; */
+    /* box-shadow: 1px 1px 1px orange, 0px 0px 1px green;
+    border: 1px solid blue;
+    height: 36px;
+    width: 16px;
+    border-radius: 3px;
+    background: red;
+    cursor: pointer; */
+/* } */
+/* input[type=range] */
+
+input[type=range]::-ms-track {
+    width: 300px;
+    height: 5px;
+
+    /*remove bg colour from the track, we'll use ms-fill-lower and ms-fill-upper instead */
+    background: transparent;
+
+    /*leave room for the larger thumb to overflow with a transparent border */
+    border-color: transparent;
+    border-width: 6px 0;
+
+    /*remove default tick marks*/
+    color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+    background: #777;
+    border-radius: 10px;
+}
+input[type=range]::-ms-fill-upper {
+    background: #ddd;
+    border-radius: 10px;
+}
+input[type=range]::-ms-thumb {
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: goldenrod;
+}
+input[type=range]:focus::-ms-fill-lower {
+    background: #888;
+}
+input[type=range]:focus::-ms-fill-upper {
+    background: #ccc;
+}
+/* https://brennaobrien.com/blog/2014/05/style-input-type-range-in-every-browser.html
+ */
+.app-slider-light::-webkit-slider-thumb:hover {
+    /* color: #6B64B2; */
+    /* background: #6B64B2; */
+}
+.app-slider-dark::-webkit-slider-thumb:hover {
+    /* color: #7f7aca; */
+    /* background: #7f7aca; */
+}
+
+.app-slider-light::-moz-range-thumb:hover {
+    /* color: #6B64B2; */
+    /* background: #6B64B2; */
+}
+.app-slider-dark::-moz-range-thumb:hover {
+    /* color: #7f7aca; */
+    /* background: #7f7aca; */
+}
+
+

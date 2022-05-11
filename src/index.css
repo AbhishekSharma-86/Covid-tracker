@@ -1,0 +1,13 @@
+#root, html, body  {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+body {
+    overflow: hidden;
+    font-family: 'Titillium Web', Helvetica, Arial, sans-serif;
+}
+

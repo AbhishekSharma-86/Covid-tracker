@@ -1,0 +1,57 @@
+
+.app-list-item {
+    /* background: #c5ee8f; */
+    display: flex;
+    flex-direction: row;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    padding-left: 0.75rem;
+    padding-right: 0.5rem;
+    /* margin-right: 0.25rem; */
+    /* width: calc(100% - 1.25rem); */
+}
+
+.app-list-row {
+    background: rgba(141, 141, 141, 0.0);
+    cursor: initial;
+    margin-right: 0.25rem;
+}
+
+.app-list-row:hover {
+    background: rgba(141, 141, 141, 0.2);
+    cursor: pointer;
+}
+
+.app-list-item:checked {
+    background: rgba(141, 141, 141, 0.2);
+    /* cursor: pointer; */
+}
+
+.app-list-item-index {
+    min-width: 2.4rem;
+    text-align: center;
+}
+
+.app-list-item-flag {
+    height: 1.5rem;
+    width:  2.5rem;
+    min-width: 2.5rem;
+    object-fit: cover;
+    /* border: 0.5px solid black; */
+}
+
+.app-list-item-title {
+    width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    /* font-weight: bold; */
+}
+
+.app-list-item-value {
+    /* min-width: 2.5rem; */
+    min-width: 4rem;
+    /* font-weight: bold; */
+    text-align: right;
+    /* background: #399ff3; */
+}

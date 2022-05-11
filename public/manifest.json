@@ -1,0 +1,15 @@
+{
+  "short_name": "COVID-19 Dashboard",
+  "name": "Interact with data visualization app that uses Ignite UI for React components (including React tables, grids, geographic map, and chart) to visualize statistics about COVID-19 pandemic with up-to-date data from JHU",
+  "icons": [
+    {
+      "src": "./images/favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    }
+  ],
+  "start_url": "./index.html",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

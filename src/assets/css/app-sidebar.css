@@ -1,0 +1,177 @@
+
+
+.app-sidebar-header {
+    /* background: rgba(204, 204, 204, 0.123); */
+    align-items: center;
+    /*margin: 0.5rem;*/
+    /*height: 2.25rem;*/
+    /* padding: 0.5rem; */
+    padding-left: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1.1rem;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.app-sidebar-menu {
+    /* nav flex-column */
+    display: flex;
+    flex-direction: column;
+    overflow-y: hidden;
+    /* overflow-x: scroll; */
+    /* background: rgb(117, 0, 128); */
+    background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
+    color: #d7d7d7;
+    /* padding: 1rem; */
+    padding: 0rem;
+    height: 100%;
+    min-width: 300px;
+    /* min-width: 250px; */
+
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+      -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+        -o-user-select: none;
+            user-select: none; /* Non-prefixed version, currently*/
+}
+
+.app-sidebar-group {
+    /* background: rgba(107, 107, 107, 0.705); */
+    /* background: rgba(204, 204, 204, 0.123); */
+    color: #d7d7d7;
+    margin-bottom: 0.5rem;
+    margin-right: 0.5rem;
+    padding: 0.5rem;
+    width: calc(100% - 1rem);
+    /* min-width: 275px; */
+    border-radius: 4px;
+
+    /* overflow: hidden; */
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-transform: capitalize;
+}
+
+.app-sidebar-control {
+    text-overflow: ellipsis;
+    text-transform: uppercase;
+    cursor: pointer;
+    white-space: nowrap;
+
+    background: rgba(204, 204, 204, 0.123);
+    color: #d7d7d7;
+    margin-bottom: 0.5rem;
+    margin-right: 0.5rem;
+    padding: 0.5rem;
+    width: calc(100% - 1rem);
+    border-radius: 4px;
+}
+
+.app-sidebar-link {
+    text-overflow: ellipsis;
+    text-transform: capitalize;
+    cursor: pointer;
+    white-space: nowrap;
+
+    /* background: rgba(204, 204, 204, 0.123); */
+    color: #d7d7d7;
+    margin-bottom: 0.5rem;
+    margin-right: 0.5rem;
+    padding: 0.5rem;
+    width: calc(100% - 1rem);
+    border-radius: 4px;
+}
+
+#app-sidebar-list {
+    /* nav flex-column */
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    overflow-x: hidden;
+    /* background: green; */
+    /* color: #e0e0e0; */
+    padding-top: 0rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    /* padding: 1rem; */
+    /* padding: 0rem; */
+    height: 100%;
+    color: #dbdbdb;
+}
+
+#app-sidebar-list span {
+    padding-left: 0.5rem;
+    padding-right: 1rem;
+    width: 1rem;
+}
+
+#app-sidebar-list a {
+    text-decoration: none;
+    display: block;
+    /* padding: 2px; */
+    /* padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 25px;
+    padding-right: 0px; */
+    /* color: #272727 !important; */
+    /* color: dodgerblue; */
+}
+
+#app-sidebar-list a:hover {
+    background: rgba(107, 107, 107, 0.705);
+    transition: "all 0.0s";
+    color: white;
+}
+
+#app-sidebar-list a:active {
+    background: rgba(107, 107, 107, 0.705);
+    transition: "all 0.0s";
+    color: white;
+}
+
+#app-sidebar-list div:hover {
+    background: rgba(107, 107, 107, 0.705);
+    transition: "all 0.0s";
+    color: white;
+}
+
+  /* scrollbar styles */
+#app-sidebar-list::-webkit-scrollbar
+{
+    width: 12px;
+    /* background: #eeeeee; */
+    background: #444444;
+    margin-top: 8px;
+    margin-right: 5px;
+    /* height: calc(100% - 5px); */
+    /* background: #2ff12f; */
+}
+
+#app-sidebar-list::-webkit-scrollbar-track
+{
+    margin-top: 0px;
+    border-radius: 0px;
+    background: transparent;
+    /* background: red; */
+    /* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); */
+}
+
+#app-sidebar-list::-webkit-scrollbar-thumb
+{
+    width: 10px;
+    border-radius: 10px;
+    background: #424242;
+    background: #868686;
+    /* background: #c2c2c2; */
+    /* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3); */
+}
+
+#app-sidebar-list::-webkit-scrollbar-thumb:hover {
+    background: #242323;
+    background: #6d6c6c;
+    background: #a1a1a1;
+}

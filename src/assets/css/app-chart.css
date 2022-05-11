@@ -1,0 +1,33 @@
+.ig-tooltip-container {
+    background: #1E1E1E !important;
+    background: transparent !important;
+    color: transparent !important;
+    border: transparent !important;
+    padding: 0px;
+    margin: 0px;
+    /* max-width: 10rem;
+    max-height: 5rem; */
+}
+
+.ig-tooltip-pointer {
+    background-color: black !important;
+    border-color: gray !important;
+    padding: 0px;
+    margin: 0px;
+}
+
+/* .ui-chart-pointer-tooltip-content-container {
+    background:  red !important;
+    color: yellow !important;
+    border-color: pink !important;
+}
+.ig-tooltip-pointer-content-container {
+    background:  lime !important;
+    color: lime !important;
+    border-color: pink !important;
+}
+
+/* .ui-tooltip-container {
+  background:  #1E1E1E !important;
+  color: #AAAAAA !important;
+} */

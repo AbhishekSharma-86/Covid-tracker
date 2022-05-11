@@ -1,0 +1,225 @@
+
+.Tooltip {
+    position: relative;
+}
+
+.Tooltip-trigger {
+    display: inline-block;
+    /* width: inherit; */
+    /* text-decoration: underline; */
+    /* background: red; */
+}
+
+.Tooltip-bubble {
+    min-width: 25%;
+    min-width: 300px;
+    /* min-width: 250px; */
+    /* max-width: 300px; */
+    position: absolute;
+    z-index: 110000;
+    align-items: center;
+    justify-items: center;
+    /* background: greenyellow; */
+    border-color: rgba(255, 255, 255, 0.65);
+    /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4); */
+}
+
+.Tooltip-bubble:after {
+    content: '';
+    position: absolute;
+}
+
+.Tooltip-bubble:hover {
+    display: none;
+    position: absolute;
+}
+
+.Tooltip > .Tooltip-top {
+    bottom: calc(100% + 4px);
+    left: 50%;
+    padding-bottom: 9px;
+    transform: translateX(-50%);
+}
+
+.Tooltip > .Tooltip-top:after {
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    /* border-top: 9px solid; rgba(255, 255, 255, 0.65); */
+    border-top-color: inherit;
+    border-top-style: solid;
+    border-top-width: 9px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.Tooltip > .Tooltip-center {
+    top: calc(50% + 4px);
+    left: 50%;
+    padding-top: 9px;
+    transform: translateX(-50%);
+}
+
+.Tooltip > .Tooltip-center:after {
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    /* border-bottom: 9px solid; rgba(255, 255, 255, 0.65); */
+    border-bottom-color: inherit;
+    border-bottom-style: solid;
+    border-bottom-width: 9px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.Tooltip > .Tooltip-bottom {
+    top: calc(100% + 2px);
+    left: 50%;
+    /* padding-top: 9px; */
+    padding-top: 9px;
+    transform: translateX(-50%);
+}
+
+.Tooltip > .Tooltip-bottom:after {
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    /* border-bottom: 9px solid; rgba(255, 255, 255, 0.65); */
+    border-bottom-color: inherit;
+    border-bottom-style: solid;
+    border-bottom-width: 9px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.Tooltip > .Tooltip-bottomCenter {
+    top: calc(100% + 4px);
+    /* top: 100%; */
+    padding-top: 9px;
+    right: 0%;
+}
+
+.Tooltip > .Tooltip-bottomCenter:after {
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    /* border-bottom: 9px solid; rgba(255, 255, 255, 0.65); */
+    border-bottom-color: inherit;
+    border-bottom-style: solid;
+    border-bottom-width: 9px;
+    top: 0;
+    right: 8px;
+}
+
+.Tooltip > .Tooltip-bottomRight {
+    top: calc(100% + 4px);
+    /* top: 100%; */
+    padding-top: 9px;
+    right: 0%;
+}
+
+.Tooltip > .Tooltip-bottomRight:after {
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    /* border-bottom: 9px solid; rgba(255, 255, 255, 0.65); */
+    border-bottom-color: inherit;
+    border-bottom-style: solid;
+    border-bottom-width: 9px;
+    top: 0;
+    right: 0%;
+}
+
+.Tooltip > .Tooltip-bottomLeft {
+    top: calc(100% + 4px);
+    padding-top: 9px;
+    left: 0%;
+}
+
+.Tooltip > .Tooltip-bottomLeft:after {
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    /* border-bottom: 9px solid; rgba(255, 255, 255, 0.65); */
+    border-bottom-color: inherit;
+    border-bottom-style: solid;
+    border-bottom-width: 9px;
+    top: 0;
+    left: 0%;
+}
+
+.Tooltip > .Tooltip-left {
+    top: 50%;
+    right: calc(100% + 4px);
+    padding-right: 9px;
+    transform: translateY(-50%);
+}
+
+.Tooltip > .Tooltip-left:after {
+    border-left-color: inherit;
+    border-left-style: solid;
+    border-left-width: 9px;
+    border-top: 9px solid transparent;
+    border-bottom: 9px solid transparent;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.Tooltip > .Tooltip-topLeft {
+    /* top: 0%; */
+    top: 0%;
+    right: calc(100% + 4px);
+    padding-right: 9px;
+    /* transform: translateY(100%); */
+}
+
+.Tooltip > .Tooltip-topLeft:after {
+    /* border-left: 9px solid; rgba(255, 255, 255, 0.65); */
+    border-left-color: inherit;
+    border-left-style: solid;
+    border-left-width: 9px;
+    border-top: 9px solid transparent;
+    border-bottom: 9px solid transparent;
+    top: 0%;
+    right: 0;
+    /* transform: translateY(-50%); */
+}
+
+.Tooltip > .Tooltip-right {
+    top: 50%;
+    left: calc(100% + 4px);
+    padding-left: 9px;
+    transform: translateY(-50%);
+}
+
+.Tooltip > .Tooltip-right:after {
+    border-right-color: inherit;
+    border-right-style: solid;
+    border-right-width: 9px;
+    border-top: 9px solid transparent;
+    border-bottom: 9px solid transparent;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.Tooltip-message {
+    color: #444444;
+    background: rgba(255, 255, 255, 0.85);
+    border-color: rgba(255, 255, 255, 0.85);
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    font-size: 1rem;
+    font-family: 'Titillium Web', 'aktiv-grotesk', 'helvetica', sans-serif;
+    padding: 5px;
+    padding-left: 10px;
+    text-align: center;
+    /* text-align: left; */
+    /* transition: .25s all ease; */
+    /* transition-delay: 2s; */
+    /* box-shadow: 4px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 6px 10px 0 rgba(0, 0, 0, 0.15); */
+    /* box-shadow: 4px 4px 6px 4px rgba(0, 0, 0, 0.16); */
+    /* box-shadow: 0px 0px 20px rgba(255, 0, 0, 0.6); */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4);
+    /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4); */
+    z-index: 1000;
+}
